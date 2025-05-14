@@ -1,0 +1,248 @@
+menu.html
+
+menu.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global feast - Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #df6e27;
+            background-color: #f4f4f4;
+            box-sizing: border-box;
+        }
+
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+
+        header {
+            background: #e16a0f;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+            font-size: 1rem;
+        }
+
+        header nav a:hover {
+            color: #ff5722;
+        }
+
+        .menu-container {
+            padding: 40px 20px;
+            background: #ffffff;
+            text-align: center;
+        }
+
+        .menu-container h1 {
+            font-size: 2.5rem;
+            color: #ee9931;
+            margin-bottom: 30px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .menu-item {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            width: 280px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: left;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .menu-details {
+            padding: 15px;
+        }
+
+        .menu-details h3 {
+            font-size: 1.4rem;
+            color: #ea9228;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .menu-details p {
+            font-size: 1rem;
+            color: #e6b224;
+            margin-bottom: 10px;
+        }
+
+        .menu-details .price {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #e1bf27;
+        }
+
+        footer {
+            background: #e38111;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        footer a {
+            color: #ea9125;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ecf0f1;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .menu-items {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .menu-item {
+                width: 100%;
+            }
+
+            header nav a {
+                font-size: 0.9rem;
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MODERN MUSE</h1>
+        <nav>
+            <a href="restaurant.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+            <a href="admin.html">Administration</a>
+        </nav>
+    </header>
+
+    <div class="menu-container">
+        <h1>Our Menu</h1>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="biryani.jpg" alt="Ambur Briyani">
+                <div class="menu-details">
+                    <h3>Ambur Briyani</h3>
+                    <p class="price">₹280/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="appam.jpg" alt="appam">
+                <div class="menu-details">
+                    <h3>Appam</h3>
+                    <p class="price">₹120/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="browni.jpg" alt="browni">
+                <div class="menu-details">
+                    <h3>Browni</h3>
+                    <p class="price">₹80/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="cake.jpg" alt="cake">
+                <div class="menu-details">
+                    <h3>cake</h3>
+                    <p class="price">₹380/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="cocktail.jpg" alt="cocktail">
+                <div class="menu-details">
+                    <h3>cocktail</h3>
+                    <p class="price">₹250/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="icecream.jpg" alt="ice cream">
+                <div class="menu-details">
+                    <h3>ICECREAM</h3>
+                    <p class="price">₹100/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="idli.jpg" alt="idli">
+                <div class="menu-details">
+                    <h3>idli</h3>
+                    <p class="price">₹100/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="kunafa.jpg" alt="kunafa">
+                <div class="menu-details">
+                    <h3>kunafa</h3>
+                    <p class="price">₹250/-</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 GLOBAL FEAST. All rights reserved. | <a href="restaurant.html">Back to Home</a></p>
+    </footer>
+
+</body>
+</html>
